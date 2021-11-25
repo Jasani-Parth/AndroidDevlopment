@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Game</string>
+    <string name="toast_button">Toast</string>
+    <string name="count_button">Count</string>
+    <string name="random_button">Random</string>
+    <string name="random_number">Random Number Between 1 to %d</string>
+    <string name="random_number_string">Random Number Between 0 And</string>
+</resources>
