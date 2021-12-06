@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Study Planner App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Study Planner App</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Calendar</string>
+
+    <string name="tab1">Study</string>
+    <string name="tab2">Assignment</string>
+    <string name="tab3">Exam</string>
+    <string name="tab4">Lecture</string>
+
+    <string name="event_select_activity">Event Type Selection</string>
+    <string name="hint_study_title">Event Title</string>
+    <string name="event_description_hint">Event Description</string>
+    <string name="event_date_hint">Event Date</string>
+    <string name="event_time_hint">Event Time</string>
+    <string name="save_event">save</string>
+    <string name="assignment_subject_hint">Assignment Subject</string>
+    <string name="description_hint">Description</string>
+    <string name="exam_subject_hint">Exam Subject</string>
+    <string name="duration_in_min">Duration ( in min )</string>
+    <string name="subject_hint">Subject</string>
+    <string name="instructor_name_hint">Instructor Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">\"Date : \"</string>
+    <string name="type">Type</string>
+    <string name="count">Count</string>
+    <string name="default_0">0</string>
+</resources>

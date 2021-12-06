@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studyplannerapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyPlannerApp">
+        <activity
+            android:name=".Add_Event_Lecture"
+            android:exported="false"
+            android:parentActivityName=".event_select"
+            android:label="@string/tab4"/>
+        <activity
+            android:name=".Add_Event_Exam"
+            android:exported="false"
+            android:parentActivityName=".event_select"
+            android:label="@string/tab3"/>
+        <activity
+            android:name=".Add_Event_Assignment"
+            android:exported="false"
+            android:label="@string/tab2"
+            android:parentActivityName=".event_select"/>
+        <activity
+            android:name=".Add_Event_Study"
+            android:exported="false"
+            android:label="@string/tab1"
+            android:parentActivityName=".event_select"/>
+        <activity
+            android:name=".event_select"
+            android:exported="false"
+            android:label="@string/event_select_activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.StudyPlannerApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

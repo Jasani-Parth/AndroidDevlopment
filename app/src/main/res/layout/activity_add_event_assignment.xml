@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFFF"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="621dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Add_Event_Assignment">
+
+    <EditText
+        android:id="@+id/assignment_subject"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:maxLength="20"
+        android:hint="@string/assignment_subject_hint"
+        android:textColorHint="@color/light_blue"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/assignment_description"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:hint="@string/description_hint"
+        android:maxLength="30"
+        android:textColorHint="@color/light_blue"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_subject"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:id="@+id/date_picker_button"
+        android:onClick="openDatePicker"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/event_date_hint"
+        android:background="@color/light_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignment_description"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:onClick="openTimePicker"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/light_blue"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/event_time_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker_button" />
+
+    <Button
+        android:id="@+id/save_event"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:gravity="center"
+        android:text="@string/save_event"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
